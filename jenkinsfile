@@ -1,15 +1,25 @@
 pipeline{
     agent any
     stages {
-        stage('First'){
+        stage('First Stage'){
             steps{
-                sh 'echo'                
+                sh 'echo first'                
             }
         }
-        stage('Second'){
+        stage('Second Stage'){
             steps{
-                sh 'echo'
+                sh 'echo second'
             }
         }
+        stage('Third Stage'){
+            steps{
+                sh 'echo third'
+            }
+        }
+        stage('Final Stage' {
+            steps{
+                sh 'echo final stage'
+            }
+        })
     }
 }
