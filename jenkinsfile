@@ -16,10 +16,10 @@ pipeline{
                 sh 'echo third'
             }
         }
-        stage('Final Stage' {
+        stage('Final Stage') {
             steps{
                 sh 'echo final stage'
             }
-        })
+        }
     }
 }
